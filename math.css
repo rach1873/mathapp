@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sun: #f1c40f;
+    --navy: #2c3e50;
+    --lightgray: #95a5a6;
+    --black: #1e272e;
+    --green: #4cd137;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--sun);
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--sun);
+    font-size: 40px;
+    cursor: pointer;
+    
+   
+}
+
+.inner-timer {
+    max-height: 0;
+    opacity: 0;
+}
+
+.seeable {
+    max-height: 50vh;
+    opacity: 1;
+}
+
+
+
+.bi-stopwatch, .bi-house, .bi-arrow-clockwise, .bi-bookmark {
+    color: var(--sun);
+    font-size: 30px;
+    cursor: pointer;
+   
+}
+
+
+
+.menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 200px;
+    height: 30vh;
+    background-color: black;
+    color: var(--sun);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateX(-200px);
+   
+    
+}
+
+.make-visible {
+   
+    transform: translateX(0);
+}
+
+
+.menu > * {
+    padding-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.inner-timer div{
+    padding-left: 30px;
+    cursor: pointer;
+   
+}
+
+.inner-timer input {
+    cursor: pointer;
+}
+
+
+.clock {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    
+
+}
+
+.stop-clock {
+    position:absolute;
+    top: 10px;
+    right: 100px;
+    font-size: 30px;
+    color: var(--sun);
+    cursor: pointer;
+    
+}
+
+.clock-display {
+    color: var(--sun);
+    font-size: 30px;    
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+ 
+
+}
+
+.see-clock {
+    visibility: visible;
+}
+
+.clock-visible {
+    opacity:1
+}
+
+
+body {
+    background: var(--navy);
+    font-family: 'Indie Flower', cursive;
+    color: white;
+
+}
+
+.math-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.problems {
+    position: relative;
+    width: 500px;
+    background-color: var(--lightgray);
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.problems div{
+    margin: 30px;
+    
+}
+
+
+.clear {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    outline: none;
+    font-family: 'Indie Flower', cursive;
+    cursor: pointer;
+    background-color: var(--sun);
+    
+
+}
+
+.submit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    outline: none;
+    font-family: 'Indie Flower', cursive;
+    cursor: pointer;
+    background-color: var(--green);
+}
+.submit:active {
+    transform: scale(.85);
+}
+
+.clear:active {
+    transform: scale(.85);
+    
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.mode {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    cursor: pointer;
+
+    
+}
+
+
+
+
+.levels {
+    background-color: black;
+    cursor: pointer;
+    opacity: 0;
+    color: var(--sun);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 8px 8px;
+}
+
+.visible {
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+}
+
+
+.final-score{
+    color: rgb(29, 149, 79);
+    font-size: 30px;
+}
+
+input + span {
+    margin: 10px;
+}
+
+.bi-check-circle-fill {
+    color: var(--green);
+    font-size: 20px;
+
+}
+
+.bi-x-circle-fill {
+    color: red;
+    font-size: 20px;
+}

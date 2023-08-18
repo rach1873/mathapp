@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sun: #f1c40f;
+    --navy: #2c3e50;
+    --lightgray: #95a5a6;
+    --black: #1e272e;
+
+
+}
+
+body {
+    background: var(--navy);
+    font-family: 'Indie Flower', cursive;
+    color: white;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+.inner {
+    width: 500px;
+    background-color: var(--sun);
+    text-align: center;
+    cursor: pointer;
+    
+   
+   
+}
+
+.top {
+    background-color: var(--lightgray);
+}
+
+/* .timer {
+    background: var(--black);
+    visibility: hidden;
+    max-height: 0;
+    
+}  */
+
+/* .toggle-radio-button{
+    visibility: visible;
+    transition: max-height 4s ease-in-out;
+    max-height: 100vh;
+
+} */
+
+div label {
+    font-size: 1.5em;
+}
+
+.bi-arrow-right-circle {
+    font-size: 40px;
+    color: var(--sun);
+}
+
+.forward {
+    float:right;
+}
+
+.play-btn {
+    font-size: 20px;
+    outline: none;
+    background-color: rgba(46, 204, 113,1.0);
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    border-radius: 5px;
+}
+
+.play-btn:hover {
+    cursor: pointer;
+    background-color: rgba(155, 89, 182,1.0);
+    transition: background-color 1s;
+}
+
+.play-btn:active {
+    transform: rotate(10deg);
+}
+
